@@ -1,0 +1,107 @@
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.full-page {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220215/pngtree-double-eleven-2-5d-mobile-phone-shopping-banner-poster-image_924667.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  
+  }
+  50% {
+    transform: scale(1.5);
+  
+  }
+  100% {
+    transform: scale(1);
+  
+  }
+}
+
+.animated-button {
+  display: inline-block;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.animated-button:hover {
+  animation: buttonHover 0.6s forwards;
+}
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px #007bff;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px #007bff;
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 5px #007bff;
+    transform: scale(1);
+  }
+}
+
+.glow-button {
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glow-button:hover {
+  animation: pulseGlow 1s infinite;
+}
